@@ -1,5 +1,7 @@
 import React from 'react'
 // import {Checked} from 'lucide-react'
+
+import{BadgeCheck}  from 'lucide-react'
 import {checklistItems} from '../constants'
 
 import codeImg  from '../assets/code.jpg'
@@ -15,11 +17,13 @@ const Workflow = () => {
         <img src={codeImg} alt='code'/>
 
     </div>
-    <div className=' pt-12 w-full lg:1/2 '>
+    <div className=' pt-12 w-full lg:w-1/2 '>
         {checklistItems.map((item,index)=>(
             <div key={index} className="flex mb-12">
                 <div className="text-green-400  mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center  rounded-full ">
                     {/* <Checked/> */}
+                    <BadgeCheck />
+
                 </div>
                 <div>
                     <h5 className='mt-1 mb-3 text-xl'>{item.title}</h5>
