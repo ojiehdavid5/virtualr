@@ -1,66 +1,61 @@
-import React from 'react'
-import { resourcesLinks,platformLinks,communityLinks }  from '../constants'
+import React from "react";
+import { resourcesLinks, platformLinks, communityLinks } from "../constants";
 
 const Footer = () => {
   return (
-<footer className="mt-20 border-top py-10 border-neutral-700">
-<div className='grid grid-cols-2 lg:grid-cols-3 gap-4'
->
-    <div>
-        <h3 className="text-md font-semibold mb-4">
-            Resources
-        </h3>
-        <ul className='space-y-2'>
-            {resourcesLinks.map((link,index)=>(
+        <footer className="mt-20 border-top py-10 border-neutral-700">
+                <hr className="mb-10 w-full"></hr>
 
-                <li key={index}>
-                <a href={link.href} className='text-neutral-300 hover-text-white'>
-{link.text}
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
+          <h3 className="text-md font-semibold mb-4">Resources</h3>
+          <ul className="space-y-2">
+            {resourcesLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.href}
+                  className="text-neutral-300 hover-text-white"
+                >
+                  {link.text}
                 </a>
-
-                </li>
+              </li>
             ))}
-        </ul>
-    </div>
-    <div>
-        <h3 className="text-md font-semibold mb-4">
-            Platform
-        </h3>
-        <ul className='space-y-2'>
-            {platformLinks.map((link,index)=>(
-
-                <li key={index}>
-                <a href={link.href} className='text-neutral-300 hover-text-white'>
-{link.text}
+          </ul>
+        </div>
+        <div>
+          <h3 className="text-md font-semibold mb-4">Platform</h3>
+          <ul className="space-y-2">
+            {platformLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.href}
+                  className="text-neutral-300 hover-text-white"
+                >
+                  {link.text}
                 </a>
-
-                </li>
+              </li>
             ))}
-        </ul>
-    </div>
+          </ul>
+        </div>
 
-    <div>
-        <h3 className="text-md font-semibold mb-4">
-            Community
-        </h3>
-        <ul className='space-y-2'>
-            {communityLinks.map((link,index)=>(
-
-                <li key={index}>
-                <a href={link.href} className='text-neutral-300 hover-text-white'>
-{link.text}
+        <div>
+          <h3 className="text-md font-semibold mb-4">Community</h3>
+          <ul className="space-y-2">
+            {communityLinks.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.href}
+                  className="text-neutral-300 hover-text-white"
+                >
+                  {link.text}
                 </a>
-
-                </li>
+              </li>
             ))}
-        </ul>
-    </div>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-      
-</div>
-
-</footer>
-  )
-}
-
-export default Footer
+export default Footer;

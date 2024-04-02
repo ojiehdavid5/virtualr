@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import { navItems } from "../constants";
 
 const Navbar = () => {
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState();
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 py-3 backdrop-blur-lg border-b border-neutral-700/800">
+      <nav className="sticky top-0 py-4 backdrop-blur-lg border-b border-orange-500">
         <div className="container px-4 text-sm mx-auto relative">
           <div className="flex justify-between items-center">
             <div className="flex items-center flex-shrink-0">
@@ -44,20 +44,20 @@ const Navbar = () => {
               </a>
             </div>
 
-            {/* <div className=" lg:hidden md:flex flex-col justify-end">
+            <div className=" lg:hidden md:flex flex-col justify-end">
               <button onClick={toggleNavbar}>
-                {menuDrawerOpen ? <X /> : <Menu />}
+                {mobileDrawerOpen ? <X /> : <Menu />}
               </button>
-            </div> */}
+            </div>
           </div>
           {mobileDrawerOpen && (
             <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
               <ul>
-                {navItems.map((item, index) => {
+                {navItems.map((item, index) => (
                   <li key={index} className="py-4">
                     <a href={item.href}>{item.label}</a>
-                  </li>;
-                })}
+                  </li>
+                ))}
               </ul>
               <div className="flex space-x-6">
                 <a href="#" className="py-2 px-3 border rounded-md">

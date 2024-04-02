@@ -17,6 +17,8 @@ const App = () => {
     <Workflow/>
     <Pricing/>
     <Testimonial/>
+
+    
     <Footer/>
 
     </div>
