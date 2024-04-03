@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
           </div>
           {mobileDrawerOpen && (
-            <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+            <div className="fixed right-0 left-0 z-20 bg-neutral-900 w-full  p-12 flex flex-col justify-center items-center lg:hidden">
               <ul>
                 {navItems.map((item, index) => (
                   <li key={index} className="py-4">
@@ -67,7 +67,7 @@ const Navbar = () => {
                   href="#"
                   className="py-2 px-3 border rounded-md bg-gradient-to-r from-orange-500 to-red-500"
                 >
-                  Sign in
+                  Create an account
                 </a>
               </div>
             </div>
