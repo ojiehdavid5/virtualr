@@ -13,10 +13,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 py-4 backdrop-blur-lg border-b border-orange-500">
+      <nav className="sticky top-0 py-4  backdrop-blur-lg border-b border-orange-500">
         <div className="container px-4 text-sm mx-auto relative">
           <div className="flex justify-between items-center">
-            <div className="flex items-center flex-shrink-0">
+            <div className="flex items-center flex-shrink-1">
               <img className="h-10 w-10 mr-2" src={logo} alt="logo" />
               <span className="text-xl tracking-tight">VirtualR</span>
             </div>
