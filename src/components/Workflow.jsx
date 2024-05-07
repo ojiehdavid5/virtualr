@@ -8,7 +8,7 @@ import codeImg from "../assets/code.jpg";
 const Workflow = () => {
   return (
     <div className="mt-20 ">
-      <h2 className="text-3xl sm:text:4xl lg:text-7xl text-center mt-6 tracking wide">
+      <h2 className="text-3xl sm:text-4xl lg:text-7xl text-center mt-6 tracking wide">
         Accelerate you{" "}
         <span className="  bg-gradient-to-r from-orange-500 to-red-500 text-transparent bg-clip-text">
           {""}coding workflow
